@@ -1,13 +1,21 @@
 class Bicycle {
-  int cadence;
-  int speed;
-  int gear;
+  int _cadence;
+  int _speed;
+  int _gear;
 
-  Bicycle(this.cadence, this.speed, this.gear);
+  Bicycle( int cadence, int speed, int gear) {
+    _cadence = cadence;
+    _speed = speed;
+    _gear = gear;
+  }
+
+  int get cadence => _cadence;
+  int get speed => _speed;
+  int get gear => _gear;
 
   @override
   String toString() =>
-      'Bicycle cadence : ${cadence} , speed : ${speed} , gear : ${gear}';
+      'Bicycle cadence : ${_cadence} , speed : ${_speed} , gear : ${_gear}';
 }
 
 void main(List<String> args) {
