@@ -3,7 +3,7 @@ class Bicycle {
   int _speed;
   int _gear;
 
-  Bicycle( int cadence, int speed, int gear) {
+  Bicycle(int cadence, int speed, int gear) {
     _cadence = cadence;
     _speed = speed;
     _gear = gear;
