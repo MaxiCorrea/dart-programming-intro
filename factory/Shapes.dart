@@ -1,4 +1,5 @@
 import 'Circle.dart';
+import 'ShapeFactory.dart';
 import 'Square.dart';
 
 main(List<String> args) {
@@ -6,4 +7,11 @@ main(List<String> args) {
   final square = Square(2);
   print(circle.area);
   print(square.area);
+
+  ShapeFactory factory = ShapeFactory();
+  final circle0 = factory.create('circle');
+  final square0 = factory.create('square');
+  print(circle0.area);
+  print(square0.area);
+
 }
